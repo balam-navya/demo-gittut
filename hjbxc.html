@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 10px;
+            background-color: rgb(206, 241, 229);
+        }
+        form{
+            display: grid;
+            padding: 60px;
+            width: 500px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(202, 237, 172);
+            border-radius: 20px;
+            margin: auto;
+        }
+        h2{
+            text-align: center;
+            margin: auto;
+        }
+        label{
+            width: 450px;
+            background-color:rgb(202, 237, 172) ;
+        }
+        .g{
+            width: 500px;
+        }
+        input[type="radio"]{
+            width: 30px;
+            height: 15px;
+            gap: 20px;
+            background-color: rgb(202, 237, 172);
+        }
+        input[type="checkbox"]{
+            width: 30px;
+            height: 15px;
+            gap: 20px;
+            background-color: rgb(202, 237, 172);
+        }
+        input{
+            background-color: aliceblue;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        div{
+            background-color: rgb(202, 237, 172);
+        }
+        button{
+            border-radius: 10px;
+            background-color: rgb(221, 219, 144);
+            width: 100px;
+            gap: 20px;
+            border: 1px solid black;
+
+        }
+        button:hover{
+            animation: pulse 0.5s ;
+        }
+        @keyframes pulse{
+            0%{transform: scale(1);}
+            50%{transform:scale(0.9);}
+            100%{transform:scale(1);}
+        }
+        .iv{
+            display: flex;
+            justify-content: center;
+            gap: 75px;
+        }
+        </style>
+</head>
+<body>
+    <h2>
+         Student Registration Form
+    </h2><br>
+     <form action="/submit">
+        <label for="name">Student's name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <br>
+        <label for="email adddress">Email address:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+        <br>
+        <label for="phno">Mobile number:</label>
+        <input type="number" name="phno" id="phno" placeholder="Enter your mobile number">
+        <br>
+        <label for="fathername"> Alternate Mobile number:</label>
+        <input type="number" name="number" id="number" placeholder="Enter your alternate mobile number">
+        <br>
+        <label for="pincode"> Date of birth:</label>
+        <input type="number" name="pincode" id="pincode" placeholder="DD/MM/YYYY">
+        <br>
+        <label for="nationality"> Nationality:</label>
+        <input type="text" name="nationality" id="nationality" placeholder="Enter your country">
+        <br>
+        <label for="languages"> Languages known:</label>
+        <input type="text" name="languages" id="languages" placeholder="Enter Languages you know">
+        <br>
+        <label for="adhaar"> Adhaar /ID number:</label>
+        <input type="number" name="adhaar" id="adhaar" placeholder="Enter your ID ">
+        <br>
+        <div>
+        <label for="gender"> Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female">Female
+        <input type="radio" id="others" name="gender" value="others"> Others
+        </div>
+        <br>
+        <label for="details"> Gaurdian's details:</label>
+        <input type="text" name="details" id="details" placeholder="Enter your gaurdian's name, contact">
+        <br>
+        <label for="address"> Current Address:</label>
+        <input type="text" name="address" id="address" placeholder="Enter your address">
+        <br>
+        <label for="address"> Permanant Address:</label>
+        <input type="text" name="address" id="address" placeholder="Enter your address">
+        <br>
+        <label for="pincode"> Pincode:</label>
+        <input type="number" name="pincode" id="pincode" placeholder="Enter your pincode">
+        <br>
+        <label for="qualification"> Highest qualification:</label>
+        <input type="text" name="qualification" id="qualification" placeholder="Enter your qualification">
+        <br>
+        <label for="university"> University name:</label>
+        <input type="text" name="university" id="university" placeholder="Enter your University">
+        <br>
+        <label for="branch"> Branch/ Specialization:</label>
+        <input type="text" name="branch" id="branch" placeholder="Enter your branch">
+        <br>
+        <label for="roll no"> Student ID/ Registration number:</label>
+        <input type="number" name="rollno" id="rollno" placeholder="Enter your student ID">
+        <br>
+        <label for="study"> Year of study:</label>
+        <input type="number" name="study" id="study" placeholder="Enter your study year" >
+        <br>
+        <label for="percentage"> CGPA/ Percentage:</label>
+        <input type="number" name="percentage" id="percentage" placeholder="Enter your percentage">
+        <br>
+        <label for="skills"> Technologies known:</label>
+        <input type="text" name="tech" id="tech" placeholder="Enter techologies you know">
+        <br>
+        <label for="skills"> Skills known:</label>
+        <input type="text" name="skills" id="skills" placeholder="Enter your skills">
+        <br>
+        <div>
+        <label for="level"> Skill level:</label>
+        <input type="radio" id="beginner" name="level" value="beginner"> Beginner
+        <input type="radio" id="intermediate" name="level" value="intermediate"> Intermediate
+        <input type="radio" id="advanced" name="level" value="advanced"> Advanced
+        </div>
+        <label for="course"> Preferred course:</label>
+        <input type="text" name="course" id="course" placeholder="Enter your preferred course">
+        <br>
+        <div>
+        <label for="mode"> Preferred learning mode:</label>
+        <input type="checkbox" id="online" name="mode" value="online"> Online
+        <input type="checkbox" id="offline" name="mode" value="offline"> Offline
+        <input type="checkbox" id="hybrid" name="mode" value="hybrid"> Hybrid
+        </div>
+        <br>
+        <label for="course"> Academic certificate:</label>
+        <input type="file" name="certificate" id="certificate">
+        <br>
+        <label for="resume"> Resume/ CV:</label>
+        <input type="file" name="resume" id="resume">
+        <br>
+        <div>
+        <br>
+        <input type="checkbox" id="box" name="box" value="box"> I agree to the T&Cs.
+         <br><input type="checkbox" id="box" name="box" value="box" > I confirm that the information provided is accurate and complete.
+         <br><input type="checkbox" id="box" name="box" value="box" > I agree to the privacy policy.
+         <br></div><br>
+        <div class="iv"><button type="submit"> Submit</button><button type="reset"> Reset</button><button type="cancel"> Cancel</button></div>
+    </form>
+</body>
+</html>

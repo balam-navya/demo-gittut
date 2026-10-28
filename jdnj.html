@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        nav{
+            display: flex;
+            background-color: black;
+            gap: 40px;
+            padding: 20px;
+            animation: pulse 1s infinite;
+            }
+        @keyframes pulse{
+            0%{transform:scale(1);}
+            50%{transform:scale(0.5);}
+            100%{transform:scale(1);}
+        }
+        .pulse{
+            animation: rotate 3s infinite;
+            background-color: aqua;
+            height: 20px;
+            width: 80px;
+            border-radius: 5px;
+        }
+       @keyframes rotate{
+            0%{transform:rotateY(0deg);}
+            50%{transform:rotateY(360deg);}
+        }
+        .scale{
+            animation: rotate 1s infinite;
+            background-color: aqua;
+            height: 20px;
+            width: 65px;
+            border-radius: 5px;
+        }
+        @keyframes rotate{
+            0%{transform:rotateY(0deg);}
+            50%{transform:rotateY(360deg);}
+        }
+        .flip{
+            animation: rotate 1s infinite;
+            background-color: aqua;
+            height: 20px;
+            width: 50px;
+            border-radius: 5px;
+        }
+        @keyframes rotate{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(50px);}
+            100%{transform:translateY(0);}
+        }
+        .fade{
+            animation: rotate 1s infinite ;
+            background-color: aqua;
+            height: 20px;
+            width: 50px;
+            border-radius: 5px;
+        }
+        @keyframes rotate{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(50px);}
+            100%{transform:translateY(0);}
+        }
+        .rotate{
+            animation: rotate 1s infinite;
+            background-color: aqua;
+            height: 20px;
+            width: 80px;
+            border-radius: 5px;
+        }
+        @keyframes rotate{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(50px);}
+            100%{transform:translateY(0);}
+        }
+        .loading{
+            animation: rotate 1s infinite;
+            background-color: aqua;
+            height: 20px;
+            width: 90px;
+            border-radius: 5px;
+        }
+        @keyframes rotate{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(50px);}
+            100%{transform:translateY(0);}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <h3 class="pulse"> PULSE</h3>
+    <h3 class="scale"> SCALE</h3>
+    <h3 class="flip"> FLIP</h3>
+    <h3 class="fade"> FADE</h3>
+    <h3 class="rotate"> ROTATE</h3>
+    <h3 class="loading"> LOADING</h3>
+    </nav>
+</body>
+</html>

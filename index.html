@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .box.fade{
+            animation: fade 2s infinite;
+        }
+        @keyframes fade {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        .box.flip{
+            animation: flip 2s infinite;
+            animation-duration:10s;
+        }
+        @keyframes flip {
+            0% { transform: rotateY(0deg); }
+            50% { transform: rotateY(180deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        .box.scale{
+            animation: scale 2s infinite;
+        }
+        @keyframes scale {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.5); }
+            100% { transform: scale(1); }
+        }
+        .box.rotate{
+            animation: rotate 2s infinite;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .box.loading{
+            animation: loading 2s infinite;
+        }
+        @keyframes loading {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+                100% { transform: rotate(360deg); }
+        }
+        .box.pulse{
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .box.bounce{
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce{
+            0%{transform: translateY(0);}
+            50%{transform: translateY(50px);}
+            100%{transform: translateY(0);}
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box fade">fade</div>
+        <div class="box flip">flip</div>
+        <div class="box scale">scale</div>
+        <div class="box rotate">rotate</div>
+        <div class="box loading">loading</div>
+        <div class="box pulse">pulse</div>
+        <div class="box bounce">bounce</div>
+    </div>
+    
+    
+</body>
+</html>
